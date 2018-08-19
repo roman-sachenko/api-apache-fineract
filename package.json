@@ -1,0 +1,34 @@
+{
+  "name": "apache-fineract-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint  . *.js",
+    "doc": "jsdoc -r -c jsdoc.conf.json ./"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "out",
+    "docs",
+    ".gitignore"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test && npm audit"
+    }
+  },
+  "author": "Roman Sachenko",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "husky": "^1.0.0-rc.13"
+  }
+}

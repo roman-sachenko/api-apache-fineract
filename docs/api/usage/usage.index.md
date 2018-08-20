@@ -1,6 +1,6 @@
 ### [<- Main](../../../README.md)
 
-## Usage
+## API Usage
 
 [Apache Fineract API](https://demo.openmf.org/api-docs/apiLive.htm#top) Wrapper <br/>
  

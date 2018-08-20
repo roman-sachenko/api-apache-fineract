@@ -4,7 +4,7 @@
   "description": "Apache Fineract API wrapper https://demo.openmf.org/api-docs/apiLive.htm",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest --config=config.jest.json",
+    "test": "jest --config=config.jest.json",
     "test:coverage": "istanbul cover ./node_modules/.bin/jest --config=config.jest.json",
     "lint": "./node_modules/.bin/eslint  . *.js",
     "lint:fix": "./node_modules/.bin/eslint  . *.js --fix",

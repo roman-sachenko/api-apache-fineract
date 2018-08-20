@@ -1,9 +1,9 @@
 # Introduction
 
-Apache Fineract API Wrapper
-URL: https://demo.openmf.org/api-docs/apiLive.htm
+[Apache Fineract API](https://demo.openmf.org/api-docs/apiLive.htm#top) Wrapper <br>
 
-The module wraps Apache Fineract API. 
+Apache Fineract is a secure, multi-tenanted microfinance platform.
+The goal of the Apache Fineract API is to empower developers to build apps on top of the Apache Fineract Platform.
 
 ## Navigation:
 

@@ -4,13 +4,17 @@
   "description": "Apache Fineract API wrapper https://demo.openmf.org/api-docs/apiLive.htm",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run doc",
+    "postinstall": "npm run doc:code",
     "test": "./node_modules/.bin/jest --config=config.jest.json",
     "test:coverage": "istanbul cover ./node_modules/.bin/jest --config=config.jest.json",
     "lint": "./node_modules/.bin/eslint  . *.js",
     "lint:fix": "./node_modules/.bin/eslint  . *.js --fix",
     "check:security": "npm audit",
     "doc:code": "jsdoc -r -c config.jsdoc.json ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roman-sachenko/apache-fineract-api.git"
   },
   "eslintIgnore": [
     "node_modules",

@@ -1,6 +1,6 @@
-# Apache Fineract API Lib Documentation
+# Introduction
 
-Apache Fineract API 
+Apache Fineract API Wrapper
 URL: https://demo.openmf.org/api-docs/apiLive.htm
 
 The module wraps Apache Fineract API. 
@@ -9,7 +9,9 @@ The module wraps Apache Fineract API.
 
 * [Environment Installation](./docs/api/environment/environment.md)
 * [Lib Setup](./docs/api/setup/setup.md)
-* [Resources](./docs/api/resources/resources.md)
+* [Lib Usage](./docs/api/usage/index.md)
+
+
 
 
 

@@ -19,30 +19,30 @@ Clients are people and businesses that have applied (or may apply) to an MFI for
 Clients can be created in Pending or straight into Active state.
 
 - Field Descriptions
-    - accountNo : <br/>
+    - **accountNo:** <br/>
         If provided during client creation, its value is set as account no. for client account, otherwise an auto generated account no. is put in place based on the configured strategy.
-    - externalId : <br/>
+    - **externalId:** <br/>
         A place to put an external reference for this client e.g. The ID another system uses.
         If provided, it must be unique.
-    - active: <br/>
+    - **active:** <br/>
         Indicates whether this client is to be created as active client. If active=true, then activationDate must be provided. If active=false, then the client is created as pending.
-    - activationDate: <br/>
+    - **activationDate:** <br/>
         The date on which the client became active.
-    - firstname: <br/>
+    - **firstname:** <br/>
         Facility to break up name into parts suitable for humans.
-    - middlename: <br/>
+    - **middlename:** <br/>
         Facility to break up name into parts suitable for humans.
-    - lastname: <br/>
+    - **lastname:** <br/>
         Facility to break up name into parts suitable for humans.
-    - fullname: <br/>
+    - **fullname:** <br/>
         Facility to set name of a client or business that doesn't suit the firstname,middlename,lastname structure.
-    - mobileNo: <br/>
+    - **mobileNo: <br/>
         Optional: unique mobile number that is used by SMS or Mobile Money functionality.
-    - staffId: <br/>
+    - **staffId:** <br/>
         The staffId of the staff member dealing with the client office. The staff member is not specifically the loan officer.
-    - savingsProductId: <br/>
+    - **savingsProductId:** <br/>
         Optional: Default overdraft savings account of client
-    - datatables: <br/>
+    - **datatables:** <br/>
         Facility to enrich client details.
 
 ### Create a new client 

@@ -19,70 +19,70 @@ A Loan product is a template that is used when creating a loan. <br/>
 Much of the template definition can be overridden during loan creation.
 
 - Field Descriptions
-    - name: <br/>
+    - **name:** <br/>
         Name associated with loan product on system.
-    - shortName: <br/>
+    - **shortName:** <br/>
         Short name associated with a loan product. <br/>
         An abbreviated version of the name, used in reports or menus where space is limited, such as Collection Sheets.
-    - description: <br/>
+    - **description:** <br/>
         For providing helpful description of product offering.
-    - fundId: <br/>
+    - **fundId:** <br/>
         For associating a loan product with a given fund by default.
-    - includeInBorrowerCycle: <br/>
+    - **includeInBorrowerCycle:** <br/>
         It is a flag, Used to denote whether the loans should include in loan cycle counter or not.
-    - useBorrowerCycle: <br/>
+    - **useBorrowerCycle:** <br/>
         It is a flag, Used to denote whether the loans should depend on borrower loan cycle counter or not.
-    - currencyCode: <br/>
+    - **currencyCode:** <br/>
         A three letter ISO code of currency.
-    - digitsAfterDecimal: <br/>
+    - **digitsAfterDecimal:** <br/>
         Override the currency default value for digitsAfterDecimal.
-    - inMultiplesOf: <br/>
+    - **inMultiplesOf:** <br/>
         Override the default value for rounding currency to multiples of value provided.
-    - installmentAmountInMultiplesOf: <br/>
+    - **installmentAmountInMultiplesOf:** <br/>
         Override the default value for rounding instalment amount to multiples of value provided.
-    - principal: <br/>
+    - **principal:** <br/>
         The loan amount to be disbursed to through loan.
-    - numberOfRepayments: <br/>
+    - **numberOfRepayments:** <br/>
         Number of installments to repay.<br/>
         Used like: numberOfRepayments Every repaymentEvery repaymentFrequencyType <br/>
         e.g. 10 (repayments) Every 12 Weeks
-    - repaymentEvery: <br/>
+    - **repaymentEvery:** <br/>
         Used like: numberOfRepayments Every repaymentEvery repaymentFrequencyType <br/>
         e.g. 10 (repayments) Every 12 Weeks
-    - repaymentFrequencyType: <br/>
+    - **repaymentFrequencyType:** <br/>
         Used like: numberOfRepayments Every repaymentEvery repaymentFrequencyType <br/>
         e.g. 10 (repayments) Every 12 Weeks <br/>
         Example Values: 0=Days, 1=Weeks, 2=Months
-    - interestRatePerPeriod: <br/>
+    - **interestRatePerPeriod:** <br/>
         Interest Rate. <br/>
         Used like: interestRatePerPeriod % interestRateFrequencyType - interestType <br/>
         e.g. 12.0000% Per year - Declining Balance
-    - interestRateFrequencyType: <br/>
+    - **interestRateFrequencyType:** <br/>
         Used like: interestRatePerPeriod% interestRateFrequencyType - interestType <br/>
         e.g. 12.0000% Per year - Declining Balance <br/>
         Example Values: 2=Per month, 3=Per year
-    - amortizationType: <br/>
+    - **amortizationType:** <br/>
         Example Values: 0=Equal principle payments, 1=Equal installments
-    - interestType: <br/>
+    - **interestType:** <br/>
         Used like: interestRatePerPeriod% interestRateFrequencyType - interestType <br/>
         e.g. 12.0000% Per year - Declining Balance <br/>
         Example Values: 0=Declining Balance, 1=Flat
-    - interestCalculationPeriodType: <br/>
+    - **interestCalculationPeriodType:** <br/>
         Example Values: 0=Daily, 1=Same as repayment period <br/>
-    - allowPartialPeriodInterestCalcualtion: <br/>
+    - **allowPartialPeriodInterestCalcualtion:** <br/>
         This value will be supported along with interestCalculationPeriodType as Same as repayment period to calculate interest for partial periods. Example: Interest charged from is 5th of April , Principal is 10000 and interest is 1% per month then the interest will be (10000 * 1%)* (25/30) , it calculates for the month first then calculates exact periods between start date and end date(can be a decimal)
-    - inArrearsTolerance: <br/>
+    - **inArrearsTolerance:** <br/>
         The amount that can be 'waived' at end of all loan payments because it is too small to worry about.
         This is also the tolerance amount assessed when determining if a loan is in arrears.
-    - principalVariationsForBorrowerCycle,interestRateVariationsForBorrowerCycle,numberOfRepaymentVariationsForBorrowerCycle: <br/>
+    - **principalVariationsForBorrowerCycle,interestRateVariationsForBorrowerCycle,numberOfRepaymentVariationsForBorrowerCycle:** <br/>
         Variations for loan, based on borrower cycle number
-    - minimumDaysBetweenDisbursalAndFirstRepayment: <br/>
+    - **minimumDaysBetweenDisbursalAndFirstRepayment:** <br/>
         The minimum number of days allowed between a Loan disbursal and its first repayment.
-    - principalThresholdForLastInstalment: <br/>
+    - **principalThresholdForLastInstalment:** <br/>
         Field represents percentage of current instalment principal amount for comparing against principal outstanding to add another repayment instalment. If the outstanding principal amount is less then calculated amount, remaining outstanding amount will be added to current instalment. Default value for multi disburse loan is 50% and non-multi disburse loan is 0%
-    - canDefineInstallmentAmount: <br/>
+    - **canDefineInstallmentAmount:** <br/>
         if provided as true, then fixed instalment amount can be provided from loan account.
-    - transactionProcessingStrategyId: <br/>
+    - **transactionProcessingStrategyId:** <br/>
         An enumeration that indicates the type of transaction processing strategy to be used. This relates to functionality that is also known as Payment Application Logic. <br/>
         A number of out of the box approaches exist, some are custom to specific MFIs, some are more general and indicate the order in which payments are processed. <br/>
     
@@ -96,54 +96,54 @@ Much of the template definition can be overridden during loan creation.
         5 = Principal Interest Penalties Fees Order <br/>
         6 = Interest Principal Penalties Fees Order <br/>
         7 = Early Payment Strategy <br/>
-    - graceOnPrincipalPayment: <br/>
+    - **graceOnPrincipalPayment:** <br/>
         Optional: Integer - represents the number of repayment periods that grace should apply to the principal component of a repayment period.
-    - graceOnInterestPayment: <br/>
+    - **graceOnInterestPayment:** <br/>
         Optional: Integer - represents the number of repayment periods that grace should apply to the interest component of a repayment period. Interest is still calculated but offset to later repayment periods.
-    - graceOnInterestCharged: <br/>
+    - **graceOnInterestCharged:** <br/>
         Optional: Integer - represents the number of repayment periods that should be interest-free.
-    - graceOnArrearsAgeing: <br/>
+    - **graceOnArrearsAgeing:** <br/>
         Optional: Integer - Used in Arrears calculation to only take into account loans that are more than graceOnArrearsAgeing days overdue.
-    - overdueDaysForNPA: <br/>
+    - **overdueDaysForNPA:** <br/>
         Optional: Integer - represents the maximum number of days a Loan may be overdue before being classified as a NPA (non performing asset)
-    - accountMovesOutOfNPAOnlyOnArrearsCompletion: <br/>
+    - **accountMovesOutOfNPAOnlyOnArrearsCompletion:** <br/>
         Optional: Boolean - if provided as true, Loan Account moves out of NPA state only when all arrears are cleared
-    - accountingRule: <br/>
+    - **accountingRule:** <br/>
         Specifies if accounting is enabled for the particular product and the type of the accounting rule to be used Example Values:1=NONE, 2=CASH_BASED, 3=ACCRUAL_PERIODIC, 4=ACCRUAL_UPFRONT
-    - isInterestRecalculationEnabled: <br/>
+    - **isInterestRecalculationEnabled:** <br/>
         It is a flag, Used to denote whether interest recalculation is enabled or disabled for the particular product
-    - daysInYearType: <br/>
+    - **daysInYearType:** <br/>
         Specifies the number of days in a year. <br/>
         Example Values:1=ACTUAL(Actual number of days in year), 360=360 DAYS, 364=364 DAYS(52 WEEKS), 365=365 DAYS
-    - daysInMonthType: <br/>
+    - **daysInMonthType:** <br/>
         Specifies the number of days in a month. <br/>
         Example Values:1=ACTUAL(Actual number of days in month), 30=30 DAYS
-    - interestRecalculationCompoundingMethod: <br/>
+    - **interestRecalculationCompoundingMethod:** <br/>
         Specifies which amount portion should be added to principal for interest recalculation. <br/>
         Example Values:0=NONE(Only on principal), 1=INTEREST(Principal+Interest), 2=FEE(Principal+Fee), 3=FEE And INTEREST (Principal+Fee+Interest)
-    - rescheduleStrategyMethod: <br/>
+    - **rescheduleStrategyMethod:** <br/>
         Specifies what action should perform on loan repayment schedule for advance payments. <br/>
         Example Values:1=Reschedule next repayments, 2=Reduce number of installments, 3=Reduce EMI amount
-    - recalculationCompoundingFrequencyType: <br/>
+    - **recalculationCompoundingFrequencyType:** <br/>
         Specifies effective date from which the compounding of interest or fee amounts will be considered in recalculation on late payment. <br/>
         Example Values:1=Same as repayment period, 2=Daily, 3=Weekly, 4=Monthly
-    - recalculationCompoundingFrequencyInterval: <br/>
+    - **recalculationCompoundingFrequencyInterval:** <br/>
         Specifies compounding frequency interval for interest recalculation.
-    - recalculationCompoundingFrequencyDate: <br/>
+    - **recalculationCompoundingFrequencyDate:** <br/>
         Specifies compounding frequency start date for interest recalculation.
-    - recalculationRestFrequencyType: <br/>
+    - **recalculationRestFrequencyType:** <br/>
         Specifies effective date from which the late or advanced payment amounts will be considered in recalculation. <br/>
         Example Values:1=Same as repayment period, 2=Daily, 3=Weekly, 4=Monthly
-    - recalculationRestFrequencyInterval: <br/>
+    - **recalculationRestFrequencyInterval:** <br/>
         Specifies rest frequency interval for interest recalculation.
-    - recalculationRestFrequencyDate: <br/>
+    - **recalculationRestFrequencyDate:** <br/>
         Specifies rest frequency start date for interest recalculation.
-    - preClosureInterestCalculationStrategy: <br/>
+    - **preClosureInterestCalculationStrategy:** <br/>
         Specifies applicable days for interest calculation on pre closure of a loan. <br/>
         Example Values:1=Calculate till pre closure date, 2=Calculate till rest frequency date
-    - isArrearsBasedOnOriginalSchedule: <br/>
+    - **isArrearsBasedOnOriginalSchedule:** <br/>
         If Specified as true, arrears will be identified based on original schedule.
-    - allowAttributeOverrides: <br/>
+    - **allowAttributeOverrides:** <br/>
         Specifies if select attributes may be overridden for individual loan accounts.
 
 ### Create a new loan product 

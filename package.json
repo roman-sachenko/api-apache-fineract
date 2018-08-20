@@ -13,7 +13,6 @@
   },
   "eslintIgnore": [
     "node_modules",
-    "out",
     "docs",
     ".gitignore"
   ],

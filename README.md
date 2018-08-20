@@ -12,7 +12,7 @@ The goal of the Apache Fineract API is to empower developers to build apps on to
 * [API Usage](./docs/api/usage/usage.index.md)
 
 
-Code documentation will be available after the installation process.
+Code documentation will be available after the installation process. <br>
 Open the `<module root folder>/docs/code/index.html` file in a browser.
 
 

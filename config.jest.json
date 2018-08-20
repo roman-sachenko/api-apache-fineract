@@ -1,5 +1,3 @@
 {
-  "roots": [
-    "test/unit/"
-  ]
+  "rootDir": "test/unit/"
 }

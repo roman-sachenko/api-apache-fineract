@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: index.js</title>
+    <title>JSDoc: Source: lib/services/errors/BadRequest.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: index.js</h1>
+    <h1 class="page-title">Source: lib/services/errors/BadRequest.js</h1>
 
     
 
@@ -26,13 +26,20 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Apache Fineract API 
- * URL: https://demo.openmf.org/api-docs/apiLive.htm
- * 
- * The module wraps Apache Fineract API. 
+            <pre class="prettyprint source linenums"><code>const httpStatus = require('http-status');
+const ApiError = require('./ApiError');
+
+
+/**
+ * @extends ApiError
  */
-module.exports = require('./lib/');
+class BadRequest extends ApiError {
+  constructor(message) {
+    super(message || 'Bad Request', httpStatus.BAD_REQUEST);
+  }
+}
+
+module.exports = BadRequest;
 </code></pre>
         </article>
     </section>

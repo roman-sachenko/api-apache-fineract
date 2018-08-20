@@ -22,75 +22,75 @@ A Loan product is a template that is used when creating a loan. <br/>
 Much of the template definition can be overridden during loan creation.
 
 - Field Descriptions
-    - accountNo: <br/>
+    - **accountNo:** <br/>
         The account no. associated with this loan. Is auto generated if not provided at loan application creation time.
-    - externalId: <br/>
+    - **externalId:** <br/>
         A place to put an external reference for this loan e.g. The ID another system uses.
         If provided, it must be unique.
-    - fundId: <br/>
+    - **fundId:** <br/>
         Optional: For associating a loan with a given fund.
-    - loanOfficerId: <br/>
+    - **loanOfficerId:** <br/>
         Optional: For associating a loan with a given staff member who is a loan officer.
-    - loanPurposeId: <br/>
+    - **loanPurposeId:** <br/>
         Optional: For marking a loan with a given loan purpose option. Loan purposes are configurable and can be setup by system admin through code/code values screens.
-    - principal: <br/>
+    - **principal:** <br/>
         The loan amount to be disbursed to through loan.
-    - loanTermFrequency: <br/>
+    - **loanTermFrequency:** <br/>
         The length of loan term <br/>
         Used like: loanTermFrequency loanTermFrequencyType <br/>
         e.g. 12 Months <br/>
-    - loanTermFrequencyType: <br/>
+    - **loanTermFrequencyType:** <br/>
         The loan term period to use. Used like: loanTermFrequency loanTermFrequencyType <br/>
         e.g. 12 Months Example Values: 0=Days, 1=Weeks, 2=Months, 3=Years
-    - numberOfRepayments: <br/>
+    - **numberOfRepayments:** <br/>
         Number of installments to repay. <br/>
         Used like: numberOfRepayments Every repaymentEvery repaymentFrequencyType <br/>
         e.g. 10 (repayments) Every 12 Weeks
-    - repaymentEvery: <br/>
+    - **repaymentEvery:** <br/>
         Used like: numberOfRepayments Every repaymentEvery repaymentFrequencyType <br/>
         e.g. 10 (repayments) Every 12 Weeks
-    - repaymentFrequencyType: <br/>
+    - **repaymentFrequencyType:** <br/>
         Used like: numberOfRepayments Every repaymentEvery repaymentFrequencyType <br/>
         e.g. 10 (repayments) Every 12 Weeks  <br/>
         Example Values: 0=Days, 1=Weeks, 2=Months
-    - interestRatePerPeriod: <br/>
+    - **interestRatePerPeriod:** <br/>
         Interest Rate. <br/>
         Used like: interestRatePerPeriod % interestRateFrequencyType - interestType <br/>
         e.g. 12.0000% Per year - Declining Balance
-    - interestRateFrequencyType: <br/>
+    - **interestRateFrequencyType:** <br/>
         Used like: interestRatePerPeriod% interestRateFrequencyType - interestType <br/>
         e.g. 12.0000% Per year - Declining Balance  <br/>
         Example Values: 2=Per month, 3=Per year
-    - graceOnPrincipalPayment: <br/>
+    - **graceOnPrincipalPayment:** <br/>
         Optional: Integer - represents the number of repayment periods that grace should apply to the principal component of a repayment period.
-    - graceOnInterestPayment: <br/>
+    - **graceOnInterestPayment:** <br/>
         Optional: Integer - represents the number of repayment periods that grace should apply to the interest component of a repayment period. Interest is still calculated but offset to later repayment periods.
-    - graceOnInterestCharged: <br/>
+    - **graceOnInterestCharged:** <br/>
         Optional: Integer - represents the number of repayment periods that should be interest-free.
-    - graceOnArrearsAgeing: <br/>
+    - **graceOnArrearsAgeing:** <br/>
         Optional: Integer - Used in Arrears calculation to only take into account loans that are more than graceOnArrearsAgeing days overdue.
-    - interestChargedFromDate: <br/>
+    - **interestChargedFromDate:** <br/>
         Optional: Date - The date from with interest is to start being charged.
-    - expectedDisbursementDate: <br/>
+    - **expectedDisbursementDate:** <br/>
         The proposed disbursement date of the loan so a proposed repayment schedule can be provided.
-    - submittedOnDate: <br/>
+    - **submittedOnDate:** <br/>
         The date the loan application was submitted by applicant.
-    - linkAccountId: <br/>
+    - **linkAccountId:** <br/>
         The Savings Account id for linking with loan account for payments.
-    - amortizationType: <br/>
+    - **amortizationType:** <br/>
         Example Values: 0=Equal principle payments, 1=Equal installments
-    - interestType: <br/>
+    - **interestType:** <br/>
         Used like: interestRatePerPeriod% interestRateFrequencyType - interestType <br/>
         e.g. 12.0000% Per year - Declining Balance  <br/>
         Example Values: 0=Declining Balance, 1=Flat
-    - interestCalculationPeriodType: <br/>
+    - **interestCalculationPeriodType:** <br/>
         Example Values: 0=Daily, 1=Same as repayment period
-    - allowPartialPeriodInterestCalcualtion: <br/>
+    - **allowPartialPeriodInterestCalcualtion:** <br/>
         This value will be supported along with interestCalculationPeriodType as Same as repayment period to calculate interest for partial periods. Example: Interest charged from is 5th of April , Principal is 10000 and interest is 1% per month then the interest will be (10000 * 1%)* (25/30) , it calculates for the month first then calculates exact periods between start date and end date(can be a decimal)
-    - inArrearsTolerance: <br/>
+    - **inArrearsTolerance:** <br/>
         The amount that can be 'waived' at end of all loan payments because it is too small to worry about. <br/>
         This is also the tolerance amount assessed when determining if a loan is in arrears.
-    - transactionProcessingStrategyId: <br/>
+    - **transactionProcessingStrategyId:** <br/>
         An enumeration that indicates the type of transaction processing strategy to be used. This relates to functionality that is also known as Payment Application Logic. <br/>
         A number of out of the box approaches exist, some are custom to specific MFIs, some are more general and indicate the order in which payments are processed. <br/>
     
@@ -104,16 +104,16 @@ Much of the template definition can be overridden during loan creation.
         5 = Principal Interest Penalties Fees Order <br/>
         6 = Interest Principal Penalties Fees Order <br/>
         7 = Early Payment Strategy <br/>
-    - loanType: <br/>
+    - **loanType:** <br/>
         To represent different type of loans. <br/>
         At present there are three type of loans are supported.  <br/>
         Available loan types: <br/>
         individual: Loan given to individual member <br/>
         group: Loan given to group as a whole <br/>
         jlg: Joint liability group loan given to members in a group on individual basis. JLG loan can be given to one or more members in a group.
-    - recalculationRestFrequencyDate: <br/>
+    - **recalculationRestFrequencyDate:** <br/>
         Specifies rest frequency start date for interest recalculation. This date must be before or equal to disbursement date
-    - recalculationCompoundingFrequencyDate: <br/>
+    - **recalculationCompoundingFrequencyDate:** <br/>
         Specifies compounding frequency start date for interest recalculation. This date must be equal to disbursement date
 
 

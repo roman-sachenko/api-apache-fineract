@@ -36,7 +36,7 @@ Clients can be created in Pending or straight into Active state.
         Facility to break up name into parts suitable for humans.
     - **fullname:** <br/>
         Facility to set name of a client or business that doesn't suit the firstname,middlename,lastname structure.
-    - **mobileNo: <br/>
+    - **mobileNo:** <br/>
         Optional: unique mobile number that is used by SMS or Mobile Money functionality.
     - **staffId:** <br/>
         The staffId of the staff member dealing with the client office. The staff member is not specifically the loan officer.

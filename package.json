@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run doc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint  . *.js",
     "doc": "jsdoc -r -c jsdoc.conf.json ./"
@@ -29,6 +30,7 @@
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "husky": "^1.0.0-rc.13"
+    "husky": "^1.0.0-rc.13",
+    "jsdoc": "^3.5.5"
   }
 }

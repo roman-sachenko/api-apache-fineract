@@ -1,8 +1,7 @@
 /**
  * Apache Fineract API 
+ * URL: https://demo.openmf.org/api-docs/apiLive.htm
  * 
- * Wraps Apache Fineract API. 
- * Provides API Versioning. V1 is only available version for now.
- * V2 can be used as an example.
+ * The module wraps Apache Fineract API. 
  */
 module.exports = require('./lib/');

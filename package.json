@@ -1,16 +1,18 @@
 {
   "name": "apache-fineract-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Apache Fineract API wrapper https://demo.openmf.org/api-docs/apiLive.htm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run doc",
+    "test": "./node_modules/.bin/jest --config=config.jest.json",
     "lint": "./node_modules/.bin/eslint  . *.js",
-    "doc": "jsdoc -r -c jsdoc.conf.json ./"
+    "lint:fix": "./node_modules/.bin/eslint  . *.js --fix",
+    "check:security": "npm audit",
+    "doc:code": "jsdoc -r -c config.jsdoc.json ./"
   },
   "eslintIgnore": [
     "node_modules",
-    "out",
     "docs",
     ".gitignore"
   ],
@@ -26,9 +28,13 @@
     "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "faker": "^4.1.0",
+    "http-status": "^1.2.0",
+    "jest": "^23.5.0",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "husky": "^1.0.0-rc.13"
+    "husky": "^1.0.0-rc.13",
+    "jsdoc": "^3.5.5"
   }
 }

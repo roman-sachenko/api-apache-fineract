@@ -8,8 +8,8 @@ The module wraps Apache Fineract API.
 ## Navigation:
 
 * [Environment Installation](./docs/api/environment/environment.md)
-* [Lib Setup](./docs/api/setup/setup.md)
-* [Lib Usage](./docs/api/usage/index.md)
+* [Setup](./docs/api/setup/setup.md)
+* [API Usage](./docs/api/usage/usage.index.md)
 
 
 

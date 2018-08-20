@@ -12,4 +12,10 @@ const listClients = async () => {
   console.log(clientsList);
 };
 
+const getOne = async () => {
+  const client = await api.client.getOne(112);
+  console.log(client);
+};
+
 listClients();
+getOne();

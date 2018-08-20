@@ -1,30 +1,24 @@
 
+### [<- Main](../../../README.md)
+### [<- API Usage Index](./usage.index.md)
 
-## Clients
+
+## API Usage:Clients
 
 - [Description](#description)
 - [Create a new Client](#create-a-new-client)
-- [Retrieve a client](#retrieve-client)
+- [Retrieve client](#retrieve-client)
 - [Retrieve client list](#retrieve-client-list)
 
 
 
 ## Description
 
+Fineract Client API
 
 ## Create a new client 
 
-
-
 ```js
-const Api = require('apache-fineract-api');
-const ApiV1 = Api.V1({
-  user: 'mifos',
-  pass: 'password',
-});
-
-const api = new ApiV1();
-
 const newClientData = {
   officeId: 1,
   firstname: 'Petra',
@@ -62,11 +56,18 @@ const newClientData = {
   }]
 };
 
-const newClient = await api.client(newClientData);
+const Api = require('apache-fineract-api');
+const ApiV1 = Api.V1({
+  user: 'mifos',
+  pass: 'password',
+});
+
+const api = new ApiV1();
+
+const newClient = await api.client.createOne(newClientData);
 ```
 
-# Retrieve a client
-   
+# Retrieve client 
     
 ```js
 const Api = require('apache-fineract-api');
@@ -77,11 +78,10 @@ const ApiV1 = Api.V1({
 
 const api = new ApiV1();
 
-const client = api.client.getOne();
+const client = api.client.getOne(clientId);
 ```
 
-# Retrieve client
-    
+# Retrieve client list
     
 ```js
 const Api = require('apache-fineract-api');

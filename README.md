@@ -12,9 +12,8 @@ The module wraps Apache Fineract API.
 * [API Usage](./docs/api/usage/usage.index.md)
 
 
-
-
-
+Code documentation will be available after the installation process.
+Open the `<module root folder>/docs/code/index.html` file in a browser.
 
 
 

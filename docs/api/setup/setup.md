@@ -10,3 +10,7 @@
 ### Run test
 
 `$ npm run test` 
+
+### Open Code Documentation
+
+Open the `<module root folder>/docs/code/index.html` file in a browser

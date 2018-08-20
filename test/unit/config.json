@@ -1,0 +1,17 @@
+{
+  "api": {
+    "v1": {
+      "name": "v1",
+      "auth": {
+        "user": "mifos",
+        "pass": "password"
+      },
+      "resources": {
+        "client": "clients",
+        "loan": "loans",
+        "loanProduct": "loanproducts"
+      },
+      "uri": "https://demo.openmf.org/fineract-provider/api/v1/"
+    }
+  }
+}

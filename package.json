@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --config=config.jest.json",
-    "test:coverage": "istanbul cover jest --config=config.jest.json",
     "lint": "./node_modules/.bin/eslint  . *.js",
     "lint:fix": "./node_modules/.bin/eslint  . *.js --fix",
     "check:security": "npm audit",
@@ -40,7 +39,6 @@
   },
   "devDependencies": {
     "husky": "^1.0.0-rc.13",
-    "istanbul": "^0.4.5",
     "jsdoc": "^3.5.5"
   }
 }

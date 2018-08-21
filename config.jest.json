@@ -1,3 +1,11 @@
 {
-  "rootDir": "test/unit/"
+  "rootDir": "./",
+  "collectCoverage": true,
+  "coverageDirectory": "./test/coverage/unit",
+  "collectCoverageFrom": [
+    "lib/**/*.{js,jsx}",
+    "!**examples/**",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ]
 }

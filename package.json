@@ -18,7 +18,8 @@
   "eslintIgnore": [
     "node_modules",
     "docs",
-    ".gitignore"
+    ".gitignore",
+    "test"
   ],
   "husky": {
     "hooks": {

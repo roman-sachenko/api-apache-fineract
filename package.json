@@ -38,7 +38,7 @@
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "husky": "^1.0.0-rc.13",
+    "husky": "^1.0.1",
     "jsdoc": "^3.5.5"
   }
 }
